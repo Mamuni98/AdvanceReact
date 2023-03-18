@@ -3,7 +3,7 @@ import "./App.css";
 import Expenses from "./Components/Expenses/Expenses";
 import NewExpense from "./Components/NewExpense/NewExpense";
 
-const App =() => {
+
   const Dummy_expenses = [
     {
       id: "e1",
@@ -25,6 +25,8 @@ const App =() => {
       date: new Date(2021, 5, 12),
     },
   ];
+
+  const App =() => {
   const [expenses, setExpenses] = useState(Dummy_expenses);
   const addNewExpenseHandler = (newExpense) =>{
     setExpenses((prevExpense) => {
