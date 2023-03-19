@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./ExpenseItem.css";
 import ExpenseDate from "./ExpenseDate";
 import ExpenseDetail from "./ExpenseDetail";
@@ -9,7 +9,7 @@ const ExpenseItem = (props) => {
   return (
     <Card className="expense-item">
       <ExpenseDate date={props.date} />
-      <ExpenseDetail title={props.title} amount={amount} />
+      <ExpenseDetail title={props.title} amount={props.amount} />
     </Card>
   );
 };
